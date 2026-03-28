@@ -2,7 +2,8 @@
 
 ## 项目简介
 
-本项目在"Sonar, Mines vs. Rocks"数据集上实现了支持向量机（SVM）算法，用于分类任务。
+本项目是东南大学未来技术学院《模式识别与机器学习》课程的作业。
+实现了在"Sonar, Mines vs. Rocks"数据集上利用支持向量机（SVM）算法，用于分类任务。
 
 ## 项目结构
 
@@ -45,10 +46,14 @@ PRCV_Homework1/
 
 ## 环境配置
 
-### 使用 pip
+### 假设您已经有了conda环境
 
 ```bash
-pip install -r requirements.txt
+conda_env_name=PRML
+conda create -n $conda_env_name python=3.9
+conda activate $conda_env_name
+
+conda install "numpy>=1.20.0" "pandas>=1.3.0" "scikit-learn>=0.24.0" "matplotlib>=3.3.0" "seaborn>=0.11.0" -c conda-forge -y
 ```
 
 ### 使用 pyproject.toml
