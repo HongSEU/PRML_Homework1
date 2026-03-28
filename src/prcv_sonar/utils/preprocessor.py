@@ -46,8 +46,9 @@ class DataPreprocessor:
         y = df.iloc[:, -1].values
         
         y_encoded = self.label_encoder.fit_transform(y)
-        print(f"标签编码: {dict(zip(self.label_encoder.classes_, 
-                                   self.label_encoder.transform(self.label_encoder.classes_)))}")
+        label_mapping = dict(zip(self.label_encoder.classes_, 
+                                 self.label_encoder.transform(self.label_encoder.classes_)))
+        print(f"标签编码: {label_mapping}")
         
         X_train, X_test, y_train, y_test = train_test_split(
             X, y_encoded, test_size=self.test_size, 
