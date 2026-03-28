@@ -5,7 +5,7 @@
 import pytest
 import pandas as pd
 import os
-from src.prcv_sonar.utils.data_loader import load_sonar_data
+from src.prml_sonar.utils.data_loader import load_sonar_data
 
 
 def test_load_sonar_data():

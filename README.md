@@ -8,7 +8,7 @@
 ## 项目结构
 
 ```
-PRCV_Homework1/
+PRML_Homework1/
 ├── data/                          # 数据文件夹
 │   └── .gitkeep                  # Git占位文件
 ├── docs/                          # 文档文件夹
@@ -20,7 +20,7 @@ PRCV_Homework1/
 ├── output/                        # 输出文件夹（可视化图表）
 │   └── .gitkeep                  # Git占位文件
 ├── src/                           # 源代码文件夹
-│   └── prcv_sonar/               # 主包
+│   └── prml_sonar/               # 主包
 │       ├── __init__.py           # 包初始化
 │       ├── main.py               # 主程序入口
 │       ├── models/               # 模型模块
@@ -43,10 +43,12 @@ PRCV_Homework1/
 ├── README.md                      # 项目说明文档
 ├── requirements.txt               # 依赖包列表
 └── tox.ini                        # Tox测试配置
+```
 
 ## 环境配置
 
-### 假设您已经有了conda环境
+### conda环境配置
+假设您已经有了conda环境
 
 ```bash
 conda_env_name=PRML
@@ -73,20 +75,20 @@ pip install -e ".[dev]"
 ### 方式1：直接运行主程序
 
 ```bash
-python -m src.prcv_sonar.main
+python -m src.prml_sonar.main
 ```
 
 或
 
 ```bash
 cd src
-python -m prcv_sonar.main
+python -m prml_sonar.main
 ```
 
 ### 方式2：作为包运行
 
 ```python
-from src.prcv_sonar.main import main
+from src.prml_sonar.main import main
 main()
 ```
 

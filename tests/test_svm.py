@@ -4,7 +4,7 @@
 
 import pytest
 import numpy as np
-from src.prcv_sonar.models.svm import SVMClassifier
+from src.prml_sonar.models.svm import SVMClassifier
 
 
 def test_svm_initialization():

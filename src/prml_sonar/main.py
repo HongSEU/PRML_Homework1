@@ -10,11 +10,11 @@ import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
-from src.prcv_sonar.models.svm import SVMClassifier
-from src.prcv_sonar.utils.data_loader import load_sonar_data
-from src.prcv_sonar.utils.preprocessor import DataPreprocessor
-from src.prcv_sonar.visualization.confusion_matrix import plot_confusion_matrices
-from src.prcv_sonar.visualization.svm_boundary import plot_svm_decision_boundary
+from src.prml_sonar.models.svm import SVMClassifier
+from src.prml_sonar.utils.data_loader import load_sonar_data
+from src.prml_sonar.utils.preprocessor import DataPreprocessor
+from src.prml_sonar.visualization.confusion_matrix import plot_confusion_matrices
+from src.prml_sonar.visualization.svm_boundary import plot_svm_decision_boundary
 
 warnings.filterwarnings('ignore')
 

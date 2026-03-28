@@ -3,14 +3,14 @@ requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "prcv-sonar"
+name = "prml-sonar"
 version = "0.1.0"
 description = "Sonar数据集分类任务 - Fisher's LDA vs SVM"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "PRCV Course"}
+    {name = "PRML Course"}
 ]
 keywords = ["machine-learning", "lda", "svm", "classification", "sonar"]
 classifiers = [
@@ -43,15 +43,15 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/prcv-sonar"
-Repository = "https://github.com/yourusername/prcv-sonar"
-Documentation = "https://github.com/yourusername/prcv-sonar/docs"
+Homepage = "https://github.com/yourusername/prml-sonar"
+Repository = "https://github.com/yourusername/prml-sonar"
+Documentation = "https://github.com/yourusername/prml-sonar/docs"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
-"prcv_sonar" = ["data/*"]
+"prml_sonar" = ["data/*"]
 
 [tool.black]
 line-length = 100
@@ -76,7 +76,7 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "-v --cov=src/prcv_sonar --cov-report=html --cov-report=term"
+addopts = "-v --cov=src/prml_sonar --cov-report=html --cov-report=term"
 
 [tool.mypy]
 python_version = "3.8"
